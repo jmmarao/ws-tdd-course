@@ -1,7 +1,7 @@
-![GitHub language count](https://img.shields.io/github/languages/count/jmmarao/ws-java-course)
-![GitHub top language](https://img.shields.io/github/languages/top/jmmarao/ws-java-course)
-![GitHub](https://img.shields.io/github/license/jmmarao/ws-java-course)
-![GitHub last commit](https://img.shields.io/github/last-commit/jmmarao/ws-java-course)
+![GitHub language count](https://img.shields.io/github/languages/count/jmmarao/ws-tdd-course)
+![GitHub top language](https://img.shields.io/github/languages/top/jmmarao/ws-tdd-course)
+![GitHub](https://img.shields.io/github/license/jmmarao/ws-tdd-course)
+![GitHub last commit](https://img.shields.io/github/last-commit/jmmarao/ws-tdd-course)
 
 # :mortar_board: Test Driven Development Course
 
