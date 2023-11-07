@@ -1,4 +1,4 @@
-package org.coursera.tdd.module01.examples;
+package org.coursera.tdd.module01.section02.examples;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
