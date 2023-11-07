@@ -19,6 +19,6 @@
 
 ### Module 01
 - Section 01: Course introduction
-- Section 02: Getting started with TDD
+- Section 02: [Getting started with TDD](https://github.com/jmmarao/ws-tdd-course/tree/main/src/test/java/org/coursera/tdd/module01/section02/examples)
 
 ### :link: [Coursera Course Information Access](https://www.coursera.org/)
