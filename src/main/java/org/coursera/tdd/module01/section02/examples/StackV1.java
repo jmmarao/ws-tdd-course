@@ -1,11 +1,11 @@
 package org.coursera.tdd.module01.section02.examples;
 
-public class Stack {
+public class StackV1 {
 
     private Object[] elements;
     private int size;
 
-    public Stack(int size) {
+    public StackV1(int size) {
         elements = new Object[size];
     }
 

@@ -10,43 +10,43 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class StackTest {
+class StackV1Test {
 
-    private Stack stack;
+    private StackV1 stackV1;
 
     @BeforeEach
     public void setup() {
-        stack = new Stack(10);
+        stackV1 = new StackV1(10);
     }
 
     @Test
     @DisplayName("Should test if stack is empty")
     public void emptyStack() {
-        assertTrue(stack.isEmpty());
-        assertEquals(0, stack.getSize());
+        assertTrue(stackV1.isEmpty());
+        assertEquals(0, stackV1.getSize());
     }
 
     @Test
     @DisplayName("Should test if stack has one element")
     public void oneElementStack() {
-        stack.push("First");
-        assertFalse(stack.isEmpty());
-        assertEquals(1, stack.getSize());
-        assertEquals("First", stack.getTop());
+        stackV1.push("First");
+        assertFalse(stackV1.isEmpty());
+        assertEquals(1, stackV1.getSize());
+        assertEquals("First", stackV1.getTop());
     }
 
     @Test
     @DisplayName("Should test if stack push two elements and pop one correctly")
     public void twoElementsStack() {
-        stack.push("First");
-        stack.push("Second");
-        assertFalse(stack.isEmpty());
-        assertEquals(2, stack.getSize());
-        assertEquals("Second", stack.getTop());
+        stackV1.push("First");
+        stackV1.push("Second");
+        assertFalse(stackV1.isEmpty());
+        assertEquals(2, stackV1.getSize());
+        assertEquals("Second", stackV1.getTop());
 
-        Object stackPopped = stack.pop();
-        assertEquals(1, stack.getSize());
-        assertEquals("First", stack.getTop());
+        Object stackPopped = stackV1.pop();
+        assertEquals(1, stackV1.getSize());
+        assertEquals("First", stackV1.getTop());
         assertEquals("Second", stackPopped);
     }
 
@@ -54,7 +54,7 @@ class StackTest {
     @DisplayName("Should test if pop an empty stack")
     public void popAnEmptyStack() {
         assertThrows(EmptyStackException.class, () ->
-                stack.pop()
+                stackV1.pop()
         );
     }
 
@@ -62,11 +62,11 @@ class StackTest {
     @DisplayName("Should test if push a full stack")
     public void pushFullStack() {
         for (int i = 0; i < 10; i++) {
-            stack.push("element" + i);
+            stackV1.push("element" + i);
         }
 
         try {
-            stack.push("Full-stack");
+            stackV1.push("Full-stack");
             fail();
         } catch (FullStackException exception) {
             assertEquals("Can't push a full stack.", exception.getMessage());
